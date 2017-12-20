@@ -5,7 +5,7 @@ Some examples about adding user-defined C++ classes to FreeFem++.
 
 This repository was made to show and explain how one can embed some C++ code within FreeFem++ (itself being built on C++). The main idea is to code in C++, then to call functions and object code from FreeFem++.
 
-FreeFem++ can be found at the following adress : [http://freefem.org](http://freefem.org) 
+FreeFem++ can be found at the following adress : [http://www.freefem.org](http://www.freefem.org) 
 
 For those using FreeFem++ for scientific work, information is provided on FreeFem++ website for citing the team that created the code.
 
