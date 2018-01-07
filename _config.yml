@@ -1,1 +1,3 @@
 theme: jekyll-theme-cayman
+title: How to create a new class for FreeFem?
+description: Some examples to add user-defined C++ classes to FreeFem++ (http://freefem.org)
