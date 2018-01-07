@@ -1,4 +1,6 @@
-# Repo.: freefem\_class\_examples
+# How to add new classes to Freefem ?
+
+( Repo.: freefem\_class\_examples)
 
 ## Description
 Some examples about adding user-defined C++ classes to FreeFem++.
