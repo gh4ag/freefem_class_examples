@@ -19,6 +19,10 @@ ArrayOfA * init_ArrayOfA1(ArrayOfA * const &SA, long int const &ns){
   return SA;
 }
 
+A* get_Ai(ArrayOfA * const &SA, long int const &i){
+  return &((*SA)[i]);
+}
+
 class Init { 
 	public:
   	Init();
@@ -40,5 +44,6 @@ Init::Init(){
   zzzfff->Add("classarray",atype<ArrayOfA* >());
 
   TheOperators->Add("<-", new OneOperator2_<ArrayOfA *, ArrayOfA *, long int >(&init_ArrayOfA1));
-
+	
+  Add<ArrayOfA *>("(","",new OneOperator2_<A *, ArrayOfA *, long int>(get_Ai));
 }

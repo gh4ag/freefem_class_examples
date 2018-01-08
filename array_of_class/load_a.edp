@@ -1,8 +1,16 @@
 load "class_a"
 
-classa A; // pas de problème
-classa B(1); //pas de problème
+classa A;
+classa B(1); 
 
-classarray EA; // pas de problème 
-classarray EB(10); // PROBLEME
+classarray EA; 
+classarray EB(10);
 
+for (int i = 0; i<10;i++){
+  A.D = i;
+  EB(i) = A;
+}
+
+real a = EB(4).D;
+
+cout << a << endl;

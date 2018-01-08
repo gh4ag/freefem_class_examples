@@ -7,10 +7,10 @@ using namespace Fem2D;
 
 class A{
 	public:
-		// constructeur et destruteur inutiles si la classe est appelée dans un .edp avec FreeFem,
-		// seul init et destroy sont appelés
-		// par contre, ils sont important si on utilise cette classe dans un autre code de C++ compilé
-		//A();
+		// no need to declare constructor and destructor if the class is called from an .edp file with Freefem
+		// only init and destroy functions are calles
+		// HOWEVER, they must be declared if we use this class in another C++ compiled class (as in any regular 
+		// C++ code)
 		A(){p_D= new double(); }
 		~A() {
 	   		if(p_D){delete p_D; p_D=0;}
@@ -18,8 +18,8 @@ class A{
 
 		double * p_D; 
 
-		// constructeur et destructeur pour FreeFem
-		// question : quel rapport avec le constr et dest de classe ?
+		// special constructor and destructor for FreeFem
+		// question : what is the link with the constr. and dest. of this class ?
 		void init(){ 
 			p_D = new double();
 		} 
