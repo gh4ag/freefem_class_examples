@@ -1,8 +1,0 @@
-load "class_a"
-
-classa A; // pas de problème
-classa B(1); //pas de problème
-
-classarray EA; // pas de problème 
-classarray EB(10); // PROBLEME
-
