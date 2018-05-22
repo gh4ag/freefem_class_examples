@@ -29,7 +29,7 @@ github_username:  gh4ag
 
 # Build settings
 #markdown: kramdown
-theme: jekyll-theme-cayman-blog
+theme: jekyll-theme-cayman
 
 plugins:
   - jekyll-seo-tag
