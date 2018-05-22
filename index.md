@@ -1,4 +1,10 @@
+---
+#
 # Repo.: freefem\_class\_examples
+#
+title: Home
+layout: home
+---
 
 ## Description
 Some examples about adding user-defined C++ classes to FreeFem++.
