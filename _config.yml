@@ -18,11 +18,14 @@ title: How to add a new class to FreeFem?
 description: >- # this means to ignore newlines until "baseurl:"
   Some examples to add user-defined C++ classes to FreeFem++ (http://freefem.org)
 baseurl:  # the subpath of your site, e.g. /blog
-url: "https://github.com/gh4ag/freefem_class_examples" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://github.com/gh4ag/freefem_class_examples/tree/master" # the base hostname & protocol for your site, e.g. http://example.com
 show_downloads: true
 google_analytics:
 # twitter_username: jekyllrb
 github_username:  gh4ag
+github:
+  zip_url: https://github.com/gh4ag/freefem_class_examples/zipball/master
+  tar_url: https://github.com/gh4ag/freefem_class_examples/tarball/master
 
 # cayman-blog:
   # date_format: "%b %-d, %Y"
@@ -35,6 +38,7 @@ plugins:
   - jekyll-seo-tag
 
 author: gh4ag
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
