@@ -18,10 +18,10 @@ class Str{
 
 		// Constructor and destructor for FreeFem
 		// Question : what is the link with the contructor and destructor of the class ?
-		void init() {pps = new string * [1](); }  
+		void init() {pps = new string * [1]();}  
 		void destroy() {delete* pps; *pps=0; delete pps; pps=0; }
 
-		//string ** get_pps(){ return pps;}
+		//string ** get_pps();
 
 	private:
 		Str(const Str &); 

@@ -22,8 +22,8 @@ class Delta{
 		void init() {pd= new double();} 
 		void destroy() { delete pd; pd=0;}
 
-		double * get_pd (Delta *D);
-		friend ostream& operator<<(ostream& os, const Delta& D);
+		double * get_pd (Delta *D); // for implementing "D = X " in .edp
+		friend ostream& operator<<(ostream& os, const Delta& D); // for using "cout << D" in .edp
 
 	private:
 		Delta(const Delta &); 

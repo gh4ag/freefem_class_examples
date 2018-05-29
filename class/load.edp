@@ -1,8 +1,8 @@
 verbosity=2;
 
 load "class_d"
-load "class_fespace"
-load "class_str"
+//load "class_fespace"
+//load "class_str"
 
 
 mesh Th=square(5,5);
@@ -12,22 +12,22 @@ real r1=10.0;
 string s1="hello";
 
 delta D1, D2=r1, D3=3.0;
-str S1, S2=s1, S3="Ok";
-phic Ph;
+//str S1, S2=s1, S3="Ok";
+//phic Ph;
 
 Vh[int] uu(3);
 
-Ph.b = u;
+//Ph.b = u;
 //3.=u;
 
 //cout << "Here :  "<< vv << endl;
 //cout << " << typeid(3).name() << endl;
-S1.pps = "Bye";
-S1.pps = s1;
-s1 = S3.pps;
-S3.pps = S1.pps;
-cout << s1 << endl;
-cout << S3.pps << endl;
+//S1.pps = "Bye";
+//S1.pps = s1;
+//s1 = S3.pps;
+//S3.pps = S1.pps;
+//cout << s1 << endl;
+//cout << S3.pps << endl;
 D1.pd = 2.0;
 D1.pd = r1;
 r1 = D3.pd;

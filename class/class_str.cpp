@@ -1,10 +1,13 @@
 #include "class_str.hpp"
 #include <ff++.hpp>
+//#include <>
 
 using namespace Fem2D;
 
 Str * init_Str(Str * const &S, string * const & s2)
 {
+  if (s2->empty()){ cout << "lol" <<endl;}
+  cout << "Init_STR: " << *s2 << endl;
   if (S->pps !=0){
     if(*(S->pps) !=0){
       delete *(S->pps);
@@ -22,6 +25,11 @@ Str * init_Str(Str * const &S, string * const & s2)
 
 string ** get_pps(Str * const &S){
     return S->pps;
+}
+
+ostream& operator<<(ostream& os, const Str & S){
+  os << *(S.pps);
+  return os;
 }
 
 class Init { 

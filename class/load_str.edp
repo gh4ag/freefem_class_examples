@@ -1,0 +1,24 @@
+verbosity=2;
+
+load "class_str"
+
+string s1="hello";
+
+str S1, S2=s1, S3="Ok";
+cout << "Init" << endl;
+cout << "S1 -> printing S1 will result in a segmentation fault" << endl;
+cout << "S2=s1 -> S2= " << S2.pps << endl;
+cout << "S3=\"OK\" -> S3= " << S3.pps << endl;
+cout << "Some operations:" << endl;
+cout << "Operations (OP): S1.pps = Bye;" << endl;
+S1.pps = "Bye";
+cout << "Result (R): S1= " << S1.pps << endl;
+cout << "OP: S1.pps = s1;" << endl;
+S1.pps = s1;
+cout << "R: S1 = " << S1.pps << endl;
+cout << "OP: s1 = S3.pps;" << endl;
+s1 = S3.pps;
+cout << "R: s1 = " << s1 << endl;
+cout << "OP: S3.pps = S1.pps;" << endl;
+S3.pps = S1.pps;
+cout << "S3.pps = " << S3.pps << endl;
