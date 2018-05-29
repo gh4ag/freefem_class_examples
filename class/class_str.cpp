@@ -1,6 +1,5 @@
 #include "class_str.hpp"
 #include <ff++.hpp>
-//#include <>
 
 using namespace Fem2D;
 
@@ -27,10 +26,10 @@ string ** get_pps(Str * const &S){
     return S->pps;
 }
 
-ostream& operator<<(ostream& os, const Str & S){
+/*ostream& operator<<(ostream& os, const Str & S){
   os << *(S.pps);
   return os;
-}
+}*/
 
 class Init { 
 	public:
