@@ -8,7 +8,7 @@ using namespace Fem2D;
 class A{
 	public:
 		// no need to declare constructor and destructor if the class is called from an .edp file with Freefem
-		// only init and destroy functions are calles
+		// only init and destroy functions are called
 		// HOWEVER, they must be declared if we use this class in another C++ compiled class (as in any regular 
 		// C++ code)
 		A(){p_D= new double(); }

@@ -30,17 +30,17 @@ class Init {
 Init init;
 Init::Init(){
 
-  // On ajoute la classe A à FreeFem
-  Dcl_Type<A*>(InitP<A>,Destroy<A>); // declare un nouveau type pour freefem++ 
-  zzzfff->Add("classa",atype<A* >()); // ajoute le type A a freefem++ 
+  // We add the A class to FreeFem
+  Dcl_Type<A*>(InitP<A>,Destroy<A>); // declare a new type in freefem++ 
+  zzzfff->Add("classa",atype<A* >()); // add the A type to freefem++ 
 
   TheOperators->Add("<-", new OneOperator2_<A *, A *, double >(&init_A1)); 
   TheOperators->Add("=",new OneOperator2<A *, A *, A *>(&set_species)); // Assignement by copy
 
   Add<A *>("D", ".", new OneOperator1_<double * , A *> (&get_p_D)); // getters in FreeFem
 
-  // On ajoute la classe ArrayOfA à FreeFem
-  Dcl_Type<ArrayOfA*>(InitP<ArrayOfA>,Destroy<ArrayOfA>); // declare un nouveau type pour freefem++ 
+  // We then add the ArrayOfA  class to FreeFem
+  Dcl_Type<ArrayOfA*>(InitP<ArrayOfA>,Destroy<ArrayOfA>); // declare a new type in freefem++ 
   zzzfff->Add("classarray",atype<ArrayOfA* >());
 
   TheOperators->Add("<-", new OneOperator2_<ArrayOfA *, ArrayOfA *, long int >(&init_ArrayOfA1));
