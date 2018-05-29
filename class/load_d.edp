@@ -1,0 +1,34 @@
+verbosity=2;
+
+load "class_d"
+
+mesh Th=square(5,5);
+fespace Vh(Th, P1);
+
+real r1=10.0;
+
+
+delta D1, D2=r1, D3=3.0;
+
+cout << "Init " << endl;
+cout << "D1 -> D1 = " << D1 << endl; // one can also use D1.pd
+cout << "D2 = r1 -> D2 = " << D2.pd << endl; // so let's do it here for D2
+cout << "D3 = 3.0 -> D3 = " << D3 << endl; 
+
+Vh[int] uu(3);
+
+cout << "Now some algebra: " << endl;
+cout << "Operation (OP): D1 = 2.0;" << endl;
+D1.pd = 2.0; 
+cout << "Result (R): D1 =" << D1 << endl;
+cout << "OP: D1 = r1;" << endl;
+D1.pd = r1;
+cout << "R: D1 = " << r1 << endl;
+cout << "OP: r1 = D3.pd;" << endl;
+r1 = D3.pd;
+cout << "R: r1 = " << D3.pd << endl;
+cout << "OP: D3.pd = D2.pd;" << endl;
+D3.pd = D2.pd;
+cout << "R: D3.pd = " << D3.pd << endl << endl; //CODA
+
+

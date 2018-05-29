@@ -2,6 +2,7 @@
 #define DELTA_CLASS
 
 #include "ff++.hpp" 
+#include <iostream>
 using namespace Fem2D;
 
 class Delta{
@@ -21,7 +22,8 @@ class Delta{
 		void init() {pd= new double();} 
 		void destroy() { delete pd; pd=0;}
 
-		double * get_pd (Delta *D){ return D->pd;}
+		double * get_pd (Delta *D);
+		friend ostream& operator<<(ostream& os, const Delta& D);
 
 	private:
 		Delta(const Delta &); 
